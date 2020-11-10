@@ -4,12 +4,12 @@
     Favourite Movie List
   </view>
   <scroll-view scroll-y="{{true}}" enable-flex="{{true}}" scroll-into-view="{{scrollInto}}" scroll-with-animation="{{true}}" style="height: 800rpx" class="list">
-    <view bindtap="toMovie" wx:for="{{items}}" id="item-{{it.id}}" wx:for-item="it" wx:key="id" wx:for-index="idx" class="item">
+    <view bindtap="toMovie" wx:for="{{items}}" id="{{it.id}}" wx:for-item="it" wx:key="id" wx:for-index="idx" class="item">
       <view class="number" >
         #{{idx + 1}}
       </view>
       <view class="name">
-        {{it.name}}
+        {{it.title}}
       </view>
     </view>
   </scroll-view>
